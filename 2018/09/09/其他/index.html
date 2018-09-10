@@ -194,7 +194,6 @@
 
   
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
   
   
     
@@ -482,6 +481,9 @@
 
           
 
+  
+  <div id="gitalk-container"></div>
+ 
   
 
 
@@ -793,6 +795,22 @@
 
 
 
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: '85c8436c880a44404493',
+          clientSecret: '2ca4d833b82931d8225d06026310b8a91c033568',
+          repo: 'KingGeGeR.github.io',
+          owner: 'KingGeGeR',
+          admin: ['KingGeGeR'],
+          id: location.pathname,
+          distractionFreeMode: 'true'
+        })
+        gitalk.render('gitalk-container')           
+       </script>
 
 
   
